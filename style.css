@@ -169,14 +169,14 @@ ul#nav li.a:current { color: #F06000; }
    padding-bottom: 60px;
    text-align: center;
 }
-#photo h1 {
+/*#photo h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
 
-}
+}*/
 
 /* photo Content */
 #photo-wrapper .columns {
@@ -202,7 +202,7 @@ ul#nav li.a:current { color: #F06000; }
 /* Like Section
 /* ------------------------------------------------------------------ */
 #like {
-	background: #ebeeee;
+	background:  #ebeeee;
 	padding-top: 90px;
 	padding-bottom: 60px;
 	text-align: center;
@@ -216,14 +216,6 @@ ul#nav li.a:current { color: #F06000; }
 	padding-top: 90px;
 	padding-bottom: 60px;
 	text-align: center;
- }
- #qrcoder h1 {
-	font: 15px/24px 'opensans-semibold', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-	margin-bottom: 48px;
- 
  }
 
  /* QR Content */
@@ -243,9 +235,20 @@ ul#nav li.a:current { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* Q&A Section
 /* ------------------------------------------------------------------ */
+#spa{
+	background: #ebeeee;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	text-align: center;
+ }
 
 
 /* ------------------------------------------------------------------ */
 /* Contact Me Section
 /* ------------------------------------------------------------------ */
-
+#contact{
+	background: #fff1d6;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	text-align: center;
+ }
