@@ -1,193 +1,240 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <!--- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <title> Personal Web Page </title>
+  <meta name="description" content="">
+	<meta name="author" content="">
+  <!-- CSS 
+    ================================================== -->
+  <!--<link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/magnific-popup.css"> -->
+     
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
+
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="O1ovg6Bi"></script>
+  <!-- Header
+   ================================================== -->
+  <header id ="home">
+  
+    <div id="menu">
+      <ul id = "nav", class = "nav">
+       <!-- <li class="current"><a class="smoothscroll" href="#home">Home</a></li>-->
+        <li><a class="smoothscroll" href="#about">About Me</a></li>
+        <li><a class="smoothscroll" href="#photos">My Photos</a></li>
+        <li><a class="smoothscroll" href="#playlist">My Playlist</a></li>
+        <li><a class="smoothscroll" href="#like">Like</a></li>
+        <li><a class="smoothscroll" href="#qrcoder">QR code</a></li>
+        <li><a class="smoothscroll" href="#spa">Q&A</a></li>
+        <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
+      </ul> <!-- end #van -->
+    </div> <!-- end #menu -->
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <div class="row banner">
+      <div class="banner-text">
+        <p class="responsive-headline">Welcome to my profile.</p>
+      </div>
+    </div> <!-- row banner #menu -->
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <p class="scrolldown">
+      <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+   </p>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+  </header> <!-- Header End -->
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+  <!-- About Section
+   ================================================== -->
+  <section id="about" class="section">
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+    <div class="row">
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+      <div class="three col">
+        <img class="profile-pic" src="images/profilepic.jpg"/>
+      </div> <!-- end .three col-->
+      
+      <div class="nine columns main-col">
+
+        <h2 class="About Me"> Hi! I'm Rona </h2>
+        <p> I'm ......<p>
+
+        <div class="row">
+          <div class="columns contact-details link">
+            <h2> <a class ="smoothscroll" href="#contact"><b>To contact me click here.</b></a>
+            </h2>
+          </div>
+        </div> <!-- end row -->
+
+      </div> <!-- end .main-col -->
+
+    </div>
+
+  </section> <!-- About Section End-->
+
+<!-- photos Section
+   ================================================== -->
+  <section id="photos" class="section">
+    <div class="row">
+
+      <div class="three columns collapsed">
+       <h1>Photos of me and my family</h1>
+        <div id="photo-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+        
+          <div class="columns photo-item">
+            <div class="item-wrap">
+              <a href="#photo1" title="">
+                <img alt="" src="images/107005719-woman-icon-cartoon-single-avatar-people-icon.jpg">
+              </a>
+            </div>
+          </div><!-- item end -->
+
+          <div class="columns photo-item">
+            <div class="item-wrap">
+              <a href="#photo2" title="">
+                <img alt="" src="images/download.jfif">
+              </a>
+            </div>
+          </div><!-- item end -->
+
+          <div class="columns photo-item">
+            <div class="item-wrap">
+              <a href="#photo3" title="">
+                <img alt="" src="images/images.png">
+              </a>
+            </div>
+          </div> <!-- item end -->
+
+        </div> <!-- photo-wrapper end -->
+
+      </div> <!-- three columns end -->
+
+    </div> <!-- row End -->
+  </section> <!-- photo Section End-->
+
+<!-- playlist Section
+================================================== -->
+  <section id="playlist" class="section">
+    <div class="row">
+      <div class=" col">
+        <h1>my playlist</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <center>
+          <audio src="http://www.ntonyx.com/mp3files/Morning_Flower.mp3" controls>
+              Your browser does not support the audio element.
+          </audio>
+      </center>
+
+      </div><!-- col end -->
+    </div> <!-- row End -->
+   
+  </section><!-- playlist Section End-->
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+<!-- like Section
+================================================== -->
+  <section id="like" class="section">
+
+    <div class="row">
+      <div class=" col">
+        <h1> give me a like</h1>
+        <div class="fb-like" data-href="file:///C:/Users/Nicole.DESKTOP-D56S5HC/Documents/%D7%94%D7%A0%D7%93%D7%A1%D7%AA%20%D7%9E%D7%A2%D7%A8%D7%9B%D7%95%D7%AA%20%D7%9E%D7%99%D7%93%D7%A2/%D7%A9%D7%A0%D7%94%20%D7%92/%D7%A1%D7%9E%D7%A1%D7%98%D7%A8%20%D7%95/%D7%A1%D7%91%D7%99%D7%91%D7%95%D7%AA%20%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%91%D7%90%D7%99%D7%A0%D7%98%D7%A8%D7%A0%D7%98/%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA/assignment1-nicolekenig-main/index.html#spa" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+      </div><!-- col end -->
+    </div> <!-- row End -->
+
+  </section> <!-- like Section End-->
+
+<!-- qrcoder Section
+================================================== -->
+  <section id="qrcoder" class="section">
+
+    <div class="row">
+
+      <h1>scan my code</h1>
+      <div class="columns QR-item">
+        <div class="item-wrap">
+          <a href="#QR" title="">
+            <img alt="" src="images/QR.png">
+          </a>
+        </div>
+      </div> <!-- item end -->
+
+    </div> <!-- row End -->
+    
+  
+  </section>  <!-- qrcoder Section End-->
+
+<!-- spa Section
+================================================== -->
+  <section id="spa" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  ans
+  <br/>
+  <br/>
+  <br/>
+  </section>
+
+<!-- contact Section
+================================================== -->
+  <section id="contact" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  contact me
+  <br/>
+  <br/>
+  <br/>
+  </section>
+
+<!-- Java Script
+   ================================================== -->
+  <script type="text/javascript">
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
   });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+  </script>
+  <script type="text/javascript">
+  $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+  });​
+  </script>
 </body>
+
 </html>
