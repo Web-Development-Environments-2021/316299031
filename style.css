@@ -85,7 +85,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    font-style: normal;
    /*background: #FCFBED;*/
 }
-.opaque { background-color: rgb(179, 227, 255); }
+
 
 ul#nav {
    min-height: 48px;
@@ -202,7 +202,7 @@ ul#nav li.a:current { color: #F06000; }
 /* Like Section
 /* ------------------------------------------------------------------ */
 #like {
-	background:  #ebeeee;
+	background:   #FCFBED;
 	padding-top: 90px;
 	padding-bottom: 60px;
 	text-align: center;
@@ -236,7 +236,7 @@ ul#nav li.a:current { color: #F06000; }
 /* Q&A Section
 /* ------------------------------------------------------------------ */
 #spa{
-	background: #ebeeee;
+	background: #FCFBED;
 	padding-top: 90px;
 	padding-bottom: 60px;
 	text-align: center;
