@@ -12,22 +12,6 @@ img {
 img.pull-right { margin: 12px 0px 0px 18px; }
 img.pull-left { margin: 12px 18px 0px 0px; }
 
-/* block grids
---------------------------------------------------------------------- */
-/*.bgrid-sixths [class*="column"]   { width: 16.66667%; }
-.bgrid-quarters [class*="column"] { width: 25%; }
-.bgrid-thirds [class*="column"]   { width: 33.33333%; }
-.bgrid-halves [class*="column"]   { width: 50%; }
-
-[class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: left; }
-
-/* Left clearing for block grid columns - columns that changes width in
-different screen sizes. Allows columns with different heights to align
-properly.
---------------------------------------------------------------------- */
-/*.first { clear: left; }   /* first column in default screen */
-/*.s-first { clear: none; } /* first column in smaller screens */
-
 
 /* ------------------------------------------------------------------ */
 /* Header Styles
@@ -49,7 +33,16 @@ header {
    /*overflow: hidden;*/
    color: #000;
 }
-header .banner-text { width: 100%; }
+header .banner {
+   width: 100%; 
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;
+}
+
+
 header .banner-text p {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: rgb(0, 0, 0);
@@ -60,8 +53,15 @@ header .banner-text p {
   
 }
 
-/*header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }*/
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+
+header .social li a { color: #fff; }
+header .social li a:hover { color: #11ABB0; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -81,7 +81,6 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;*/
 }
-header .scrolldown a:hover { color: #11ABB0; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -90,24 +89,22 @@ header .scrolldown a:hover { color: #11ABB0; }
 	 padding: 0;
 	 border: none;
 	 outline: none;
-    /*background: #bd0762;*/
+    background: #ffba6b;
 }
 
 /* menu */
 #menu {
-   font: 12px ;  
+   font: 13px ;  
    width: 100%;
    text-transform: uppercase;
-   letter-spacing: 2.5px;
    margin: 0 auto;
    z-index: 100;
    position: fixed;
    left: 0;
    top: 0;
    text-align: center;
-   font-style: normal;
+   font-style: bold;
 }
-
 
 ul#nav {
    min-height: 48px;
@@ -125,24 +122,20 @@ ul#nav li {
 ul#nav li a {
 
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
+   font-style: bold;
    display: inline-block;
    padding: 8px 13px;
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-  	color: rgb(0, 0, 0);
+   color: #000;
 
-/*	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;*/
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li a:hover{color: #777777;}
-ul#nav li.a:current { color: #F06000; }
+ul#nav li.current a { color: #0088ff; }
+ul#nav li a:hover{color: #55b0ff;}
+
 
 
 /* ------------------------------------------------------------------ */
@@ -162,7 +155,7 @@ ul#nav li.a:current { color: #F06000; }
 
   #about h1{
 	font: 35px/40px;
-	color:#9d6ac7;
+	color:#00af89;
 	margin-bottom: 12px;
    text-align: center;
    left: 50%;
@@ -205,7 +198,7 @@ ul#nav li.a:current { color: #F06000; }
    padding-bottom: 66px;
    text-align: center;
    font-family: Calibri;
-   color:#9d6ac7;
+	color:#00af89;
 }
 #photos h1 {
    font-family: Calibri;
@@ -253,7 +246,7 @@ ul#nav li.a:current { color: #F06000; }
 	margin-bottom: 12px;
    text-align: center;
    left: 50%;
-   color:#9d6ac7;
+	color:#00af89;
 	}
 
 
@@ -266,7 +259,7 @@ ul#nav li.a:current { color: #F06000; }
 	padding-top: 66x;
 	padding-bottom: 66px;
 	text-align: center;
-   color:#9d6ac7;
+	color:#00af89;
  }
 
 /* ------------------------------------------------------------------ */
@@ -278,7 +271,7 @@ ul#nav li.a:current { color: #F06000; }
 	padding-top:66px;
 	padding-bottom: 66px;
 	text-align: center;
-   color:#9d6ac7;
+	color:#00af89;
  }
 
  /* QR Content */
@@ -304,7 +297,7 @@ ul#nav li.a:current { color: #F06000; }
 	padding-top: 66px;
 	padding-bottom:66px;
 	text-align: center;
-   color:#9d6ac7;
+	color:#00af89;
 
  }
 
@@ -318,6 +311,6 @@ ul#nav li.a:current { color: #F06000; }
 	padding-top: 90px;
 	padding-bottom: 60px;
 	text-align: center;
-   color:#9d6ac7;
+	color:#00af89;
 
  }
