@@ -30,15 +30,16 @@
   <header id ="home">
   
     <div id="menu">
-      <ul id = "nav", class = "nav">
-        <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About Me</a></li>
-        <li><a class="smoothscroll" href="#photos">My Photos</a></li>
-        <li><a class="smoothscroll" href="#playlist">My Playlist</a></li>
-        <li><a class="smoothscroll" href="#like">Like</a></li>
-        <li><a class="smoothscroll" href="#qrcoder">QR code</a></li>
-        <li><a class="smoothscroll" href="#spa">Q&A</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
+        <ul id = "nav", class = "nav">
+          <img id="logo" src="images/logo2.jpg" width="65" height="45"></img>
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About Me</a></li>
+          <li><a class="smoothscroll" href="#photos">My Photos</a></li>
+          <li><a class="smoothscroll" href="#playlist">My Playlist</a></li>
+          <li><a class="smoothscroll" href="#like">Like</a></li>
+          <li><a class="smoothscroll" href="#qrcoder">QR code</a></li>
+          <li><a class="smoothscroll" href="#spa">Q&A</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
       </ul> <!-- end #van -->
     </div> <!-- end #menu -->
 
@@ -176,7 +177,7 @@
 <!-- contact Section
 ================================================== -->
   <section id="contact" class="section" >
-    <form dir="rtl" method="get" data-action="malito:nicolek@post.bgu.ac.il"  >
+    <form dir="rtl" method="get" action="malito:nicolek@post.bgu.ac.il"  >
       <div class="row">
         <col class="col">
 
@@ -213,9 +214,6 @@
      $('#menu').toggle($(this).scrollTop()>1000)
   });​
   </script>
-
-
-
 
 <script>
   function send() {
