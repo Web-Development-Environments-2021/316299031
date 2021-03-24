@@ -141,7 +141,7 @@ ul#nav img{
    float:left;
    padding-left: 20px;
    padding-top: 2px;
-   
+   position:absolute;
 }
 
 /* ------------------------------------------------------------------ */
