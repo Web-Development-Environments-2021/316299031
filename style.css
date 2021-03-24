@@ -3,7 +3,31 @@
 /* General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #FCFBED; }
+body { background: #FCFBED;  }
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+img.pull-right { margin: 12px 0px 0px 18px; }
+img.pull-left { margin: 12px 18px 0px 0px; }
+
+/* block grids
+--------------------------------------------------------------------- */
+/*.bgrid-sixths [class*="column"]   { width: 16.66667%; }
+.bgrid-quarters [class*="column"] { width: 25%; }
+.bgrid-thirds [class*="column"]   { width: 33.33333%; }
+.bgrid-halves [class*="column"]   { width: 50%; }
+
+[class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: left; }
+
+/* Left clearing for block grid columns - columns that changes width in
+different screen sizes. Allows columns with different heights to align
+properly.
+--------------------------------------------------------------------- */
+/*.first { clear: left; }   /* first column in default screen */
+/*.s-first { clear: none; } /* first column in smaller screens */
+
 
 /* ------------------------------------------------------------------ */
 /* Header Styles
@@ -31,7 +55,8 @@ header .banner-text p {
    color: rgb(0, 0, 0);
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
-   height: 200px;
+   padding-top:150px;
+   padding-bottom: 66px;
   
 }
 
@@ -44,19 +69,17 @@ header .scrolldown a {
    bottom: 30px;
    left: 50%;
    margin-left: -29px;
-  /* color: rgb(0, 147, 192);*/
    display: block;
    height: 42px;
    width: 42px;
    font-size: 42px;
    line-height: 42px;
-   /*color: rgb(0, 247, 255);*/
    border-radius: 100%;
 
-  -webkit-transition: all .3s ease-in-out;
+  /*-webkit-transition: all .3s ease-in-out;
    -moz-transition: all .3s ease-in-out;
    -o-transition: all .3s ease-in-out;
-   transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;*/
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
@@ -83,14 +106,12 @@ header .scrolldown a:hover { color: #11ABB0; }
    top: 0;
    text-align: center;
    font-style: normal;
-   /*background: #FCFBED;*/
 }
 
 
 ul#nav {
    min-height: 48px;
    width: auto;
-   /* center align the menu */
    text-align: center;
 }
 ul#nav li {
@@ -128,94 +149,136 @@ ul#nav li.a:current { color: #F06000; }
 /* About Section
 /* ------------------------------------------------------------------ */
 
-#about {
+#about{
    background: #fff1d6;
-   padding-top: 96px;
+   padding-top: 66px;
    padding-bottom: 66px;
-   overflow: hidden;
-   color: #000;
-   
+   overflow: hidden;   
+   font-family: Calibri; 
 }
 
  #about a, #about a:visited  { color: rgb(0, 0, 0); } 
  #about a:hover, #about a:focus { color: #11ABB0; } 
 
+  #about h1{
+	font: 35px/40px;
+	color:#9d6ac7;
+	margin-bottom: 12px;
+   text-align: center;
+   left: 50%;
+	}
+   
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+   font-style: Calibri;
+   font: 22px/30px;
    color: rgb(0, 0, 0);
    margin-bottom: 12px;
    text-align: center;
+   left: 50%;
 }
 #about p {
-   line-height: 30px;
+   font-style: Calibri;
+   font-size: 20px;
+   color: rgb(0, 0, 0);
    text-align: center;
+   left: 50%;
 }
 #about .profile-pic {
-   position: relative;
+   vertical-align: bottom;
+   position:absolute;
+   left: 10%;
+   right: 40%;
    width: 120px;
    height: 120px;
    border-radius: 100%;
+   padding-top: 80px;
+   padding-bottom: 66px;
 }
-
-#about .main-col { padding-right: 5%; }
 
 /* ------------------------------------------------------------------ */
 /* Photo Section
 /* ------------------------------------------------------------------ */
 
-#photo {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+#photos {
+   background: #FCFBED;
+   padding-top: 66px;
+   padding-bottom: 66px;
    text-align: center;
+   font-family: Calibri;
+   color:#9d6ac7;
 }
-/*#photo h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   text-align: center;
+#photos h1 {
+   font-family: Calibri;
+   font: 35px/40px;
    margin-bottom: 48px;
-
-}*/
+}
 
 /* photo Content */
-#photo-wrapper .columns {
-	 margin-bottom: 36px; }
-.photo-item .item-wrap {
-   overflow: hidden;
-   position: relative;
+#photos .columns {
+  float: left;
+  width: 32%;
+  padding: 5px;
+
 }
-.photo-item .item-wrap a {
+
+
+.photo-item  a {
    display: block;
    cursor: pointer;
 }
+
+#photos .row::after {
+   content: "";
+   clear: both;
+   display: table;
+   float:center;
+ }
+
+
 /* ------------------------------------------------------------------ */
 /* Playlist Section
 /* ------------------------------------------------------------------ */
 #playlist{
    background: #fff1d6;
-   padding-top: 90px;
-   padding-bottom: 60px;
+   padding-top: 66px;
+   padding-bottom: 66px;
    text-align: center;
+   
 }
+
+#playlist h1{
+   font-family: Calibri;
+	font: 35px/40px;
+	color:#95A3A3;
+	margin-bottom: 12px;
+   text-align: center;
+   left: 50%;
+   color:#9d6ac7;
+	}
+
+
 /* ------------------------------------------------------------------ */
 /* Like Section
 /* ------------------------------------------------------------------ */
 #like {
+   font-family: Calibri;
 	background:   #FCFBED;
-	padding-top: 90px;
-	padding-bottom: 60px;
+	padding-top: 66x;
+	padding-bottom: 66px;
 	text-align: center;
+   color:#9d6ac7;
  }
 
 /* ------------------------------------------------------------------ */
 /* QR code Section
 /* ------------------------------------------------------------------ */
 #qrcoder {
+   font-family: Calibri;
 	background: #fff1d6;
-	padding-top: 90px;
-	padding-bottom: 60px;
+	padding-top:66px;
+	padding-bottom: 66px;
 	text-align: center;
+   color:#9d6ac7;
  }
 
  /* QR Content */
@@ -236,10 +299,13 @@ ul#nav li.a:current { color: #F06000; }
 /* Q&A Section
 /* ------------------------------------------------------------------ */
 #spa{
+   font-family: Calibri;
 	background: #FCFBED;
-	padding-top: 90px;
-	padding-bottom: 60px;
+	padding-top: 66px;
+	padding-bottom:66px;
 	text-align: center;
+   color:#9d6ac7;
+
  }
 
 
@@ -247,8 +313,11 @@ ul#nav li.a:current { color: #F06000; }
 /* Contact Me Section
 /* ------------------------------------------------------------------ */
 #contact{
+   font-family: Calibri;
 	background: #fff1d6;
 	padding-top: 90px;
 	padding-bottom: 60px;
 	text-align: center;
+   color:#9d6ac7;
+
  }

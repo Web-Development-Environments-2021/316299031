@@ -7,6 +7,7 @@
   <title> Personal Web Page </title>
   <meta name="description" content="">
 	<meta name="author" content="">
+
   <!-- CSS 
     ================================================== -->
   <!--<link rel="stylesheet" href="css/default.css">
@@ -19,8 +20,11 @@
 </head>
 
 <body>
+
+  <!--for like bottom-->
   <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="O1ovg6Bi"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="kExOgAPa"></script>
+
   <!-- Header
    ================================================== -->
   <header id ="home">
@@ -57,24 +61,27 @@
     <div class="row">
 
       <div class="three col">
-        <img class="profile-pic" src="images/profilepic.jpg"/>
+        <img class="profile-pic" src="images/profilepic.jpg"/> 
       </div> <!-- end .three col-->
       
-      <div class="nine columns main-col">
+      <div id="abountText" class="nine columns main-col">
 
-        <h2 class="About Me"> Hi! I'm Rona </h2>
-        <p> I'm ......<p>
+        <h1 class="About Me">...קצת על עצמי</h1>
 
-        <div class="row">
-          <div class="columns contact-details link">
-            <h2> <a class ="smoothscroll" href="#contact"><b>To contact me click here.</b></a>
-            </h2>
-          </div>
-        </div> <!-- end row -->
+        <h2 class="About Me"> היי אני רונה </h2>
+        <p>אני אוהבת טיולים, תיאטרון, סרטים ובילויים</p>
+        <p>אני אוהבת לקרוא, ללכת לים, מפגשי חברה וערב ביתי שקט</p>
+        <p>יש לי שני בנים מקסימים,נכד אחד וכלב</p>
+        <p>אשמח להכיר משהו לחלוק איתו את שמחת החיים וליצור חוויות חדשות</p>
+
+        <p class="scrolldown">
+          <a class="smoothscroll" href="#contact"><b>ליצירת קשר לחץ כאן</b></a>
+       </p>
 
       </div> <!-- end .main-col -->
+    </div> <!--row end-->
 
-    </div>
+    
 
   </section> <!-- About Section End-->
 
@@ -82,38 +89,27 @@
    ================================================== -->
   <section id="photos" class="section">
     <div class="row">
+       <h1>תמונות</h1>
 
-      <div class="three columns collapsed">
-       <h1>Photos of me and my family</h1>
-        <div id="photo-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-        
+       <!-- column -->
+      
           <div class="columns photo-item">
-            <div class="item-wrap">
-              <a href="#photo1" title="">
-                <img alt="" src="images/107005719-woman-icon-cartoon-single-avatar-people-icon.jpg">
+              <a href="#photo1" title="" >
+                <img alt="" src="images/photo1.png" style="width: 450px; height: 295px;">
               </a>
-            </div>
-          </div><!-- item end -->
+          </div> <!--columns photo-item end-->
 
           <div class="columns photo-item">
-            <div class="item-wrap">
               <a href="#photo2" title="">
-                <img alt="" src="images/download.jfif">
+                <img alt="" src="images/photo2.jpg" style="width: 450px; height: 295px;">
               </a>
-            </div>
-          </div><!-- item end -->
+          </div><!--columns photo-item end-->
 
           <div class="columns photo-item">
-            <div class="item-wrap">
               <a href="#photo3" title="">
-                <img alt="" src="images/images.png">
+                <img alt="" src="images/photo3.jpg"style="width: 450px; height: 295px;" >
               </a>
-            </div>
-          </div> <!-- item end -->
-
-        </div> <!-- photo-wrapper end -->
-
-      </div> <!-- three columns end -->
+          </div> <!--columns photo-item end-->
 
     </div> <!-- row End -->
   </section> <!-- photo Section End-->
@@ -124,12 +120,7 @@
     <div class="row">
       <div class=" col">
         <h1>my playlist</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <center>
-          <audio src="http://www.ntonyx.com/mp3files/Morning_Flower.mp3" controls>
-              Your browser does not support the audio element.
-          </audio>
-      </center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KH7ZbTcDaNo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
       </div><!-- col end -->
     </div> <!-- row End -->
@@ -144,7 +135,7 @@
     <div class="row">
       <div class=" col">
         <h1> give me a like</h1>
-        <div class="fb-like" data-href="file:///C:/Users/Nicole.DESKTOP-D56S5HC/Documents/%D7%94%D7%A0%D7%93%D7%A1%D7%AA%20%D7%9E%D7%A2%D7%A8%D7%9B%D7%95%D7%AA%20%D7%9E%D7%99%D7%93%D7%A2/%D7%A9%D7%A0%D7%94%20%D7%92/%D7%A1%D7%9E%D7%A1%D7%98%D7%A8%20%D7%95/%D7%A1%D7%91%D7%99%D7%91%D7%95%D7%AA%20%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%91%D7%90%D7%99%D7%A0%D7%98%D7%A8%D7%A0%D7%98/%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA/assignment1-nicolekenig-main/index.html#spa" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+        <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-nicolekenig/" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="true"></div> 
       </div><!-- col end -->
     </div> <!-- row End -->
 
@@ -188,7 +179,7 @@
 
     <div class="row">
       <col class="col">
-      <h1>contact me</h1>
+      <h1>יצירת קשר</h1>
       </div><!-- col End -->
     </div> <!-- row End -->
   
