@@ -325,10 +325,6 @@ ul#nav li a:hover{color: #55b0ff;}
 	
 }
 
-#contact textarea
-{
-   align-items: center;
-}
 
 #contact .submit{
 	width: 10%;
@@ -337,4 +333,5 @@ ul#nav li a:hover{color: #55b0ff;}
    border-radius: 10%;
 
 }
+
 
