@@ -176,27 +176,26 @@
 
 <!-- contact Section
 ================================================== -->
-  <section id="contact" class="section" >
-    <form dir="rtl" method="get" action="malito:nicolek@post.bgu.ac.il"  >
-      <div class="row">
-        <col class="col">
+<section id="contact" class="section" >
+  <form  action="#"  method="POST"  enctype="text/plain" onsubmit="sendMail(this);">
+    <div class="row">
+      <col class="col">
 
-        <h1>יצירת קשר</h1>
-        <p>כתובת מייל</p>
-        <input id="email" type="email" placeholder="כתובת מייל">
-        <p>נושא</p>
-        <input id="subject" name="subject" placeholder="נושא" type="text">
-        <p>תוכן</p>
-        <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body" rows="8" cols="80"  data-emoji-picker="true" style="resize: none;"></textarea>
-        
-        <div class="row">
-          <input id="submit" type="submit" value="שלח" onclick="send()">
-        </div>
+      <h1>יצירת קשר</h1>
+      <p>כתובת מייל</p>
+      <input id="email" name="email" type="mail" placeholder="כתובת מייל">
+      <p>נושא</p>
+      <input id="subject" name="subject" placeholder="נושא" type="text">
+      <p>תוכן</p>
+      <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body" rows="8" cols="10"  data-emoji-picker="true" ></textarea>
+      
+      <input id="submit" type="submit" value="send" >
 
-        </div><!-- col End -->
-      </div> <!-- row End -->
-  </form>
-  </section> <!-- contact Section End-->
+      </div><!-- col End -->
+    </div> <!-- row End -->
+    
+</form>
+</section> <!-- contact Section End-->
 
 <!-- Java Script
    ================================================== -->
@@ -215,17 +214,20 @@
   });​
   </script>
 
-<script>
-  function send() {
-   var link = "email:" + encodeURIComponent(document.getElementById('email').value)
-            + "?cc=nicolek@post.bgu.ac.il"
-            + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
-            + "&body=" + encodeURIComponent(document.getElementById('body').value);
-   
-   window.location.href = link;
+
+<script type="text/javascript">
+  function send(form) {
+    let sub = form.subject.value;
+    let mess = form.body.value;
+    let link = document.createElement('a');
+    link.href = "mailto:nicolek@post.bgu.ac.il?subject="+sub+" &body="+mess;
+    link.click();
+    alert("Message send");
+
 }
 </script>
- 
+
+
 <script src="js/emojiPicker.js"></script>
 <script>
   (() => {
