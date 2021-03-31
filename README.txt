@@ -1,7 +1,7 @@
 assignment1-nicolekenig
 name: Nicole Kenigsberg
 ID: 316299031
-https://web-development-environments-2021.github.io/assignment1-nicolekenig/
+https://web-development-environments-2021.github.io/316299031/
 הערות:
 התמונות נלקחו מגוגל
                                                                                                                                                                                    
