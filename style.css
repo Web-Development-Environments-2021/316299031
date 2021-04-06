@@ -347,8 +347,13 @@ ul#nav img{
 	width: 10%;
 	color: black;
 	background-color: rgb(233, 233, 233);
-   border-radius: 10%;
+    border-radius: 10%;
 
+}
+
+#contact textarea{
+	height:200px;
+	width:500px;
 }
 
 

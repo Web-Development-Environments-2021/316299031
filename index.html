@@ -193,17 +193,17 @@
 <!-- contact Section
 ================================================== -->
 <section id="contact" class="section" >
-  <form  action="mailto:nicolek@post.bgu.ac.il"  method="POST"  enctype="multipart/form-data" >
+  <form  action="mailto:nicolek@post.bgu.ac.il"  method="GET"  enctype="text/plain" >
     <div class="row">
       <col class="col">
 
       <h1>יצירת קשר</h1>
       <p>כתובת מייל</p>
-      <input id="email" name="email" type="mail" placeholder="כתובת מייל">
+      <input id="mail" name="mail" type="mail" placeholder="כתובת מייל">
       <p>נושא</p>
       <input id="subject" name="subject" placeholder="נושא" type="text">
       <p>תוכן</p>
-      <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body" rows="8" cols="10"  data-emoji-picker="true" ></textarea>
+      <textarea id="body" name="body" placeholder="...כתוב כאן את תוכן המייל"  data-emoji-picker="true" ></textarea>
       
       <input id="submit" type="submit" value="send" >
 
@@ -238,10 +238,6 @@
     new EmojiPicker()
   })()
 </script>
- 
-
-
-  
 
   
 </body>
